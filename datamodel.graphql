@@ -1,0 +1,32 @@
+type User{
+  id: ID! @unique
+  name: String!
+  age:Int
+  appinfo:String
+  appinfodemo:String
+  version:Int
+}
+
+type Person{
+    id: ID! @unique
+    pername:String
+    age:Int
+}
+type AppURL {
+    id: ID! @unique
+    appname:String
+    appurl:String
+}
+type Tweet {
+  id: ID! @unique
+  createdAt: DateTime!
+  text: String!
+  owner: User!
+}
+
+type UserTweet {
+  id: ID! @unique
+  handle: String! @unique
+  name: String!
+  tweets: [Tweet!]!
+}
