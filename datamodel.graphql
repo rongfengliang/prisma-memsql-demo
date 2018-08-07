@@ -28,4 +28,5 @@ type UserTweet {
   id: ID! @unique
   handle: String! @unique
   name: String!
+  tweets: [Tweet!]!
 }
