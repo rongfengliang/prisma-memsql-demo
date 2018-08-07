@@ -18,4 +18,4 @@ services:
     image: memsql/quickstart
     ports:
       - "3306:3306"
-      - "9000:9000"
+      - "9001:9000"
